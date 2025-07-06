@@ -43,7 +43,7 @@ const AboutSection: React.FC = () => {
           <h3 className="text-2xl md:text-3xl font-bold mb-6 text-[#2ef2ff]">
             The Next Generation
           </h3>
-          <p className="text-gray-300 mb-6">
+          <p className="font-sans text-gray-300">
             GENESIZ'25 is the premier technology and innovation competition that
             brings together the brightest minds to solve real-world problems.
             Organized by the Robotics and Innovation Club, this competition
@@ -70,7 +70,7 @@ const AboutSection: React.FC = () => {
       }}>
           <div className="relative w-full max-w-md aspect-video rounded-lg overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-r from-[#ff2a93]/20 to-[#2ef2ff]/20"></div>
-            <img src="https://images.unsplash.com/photo-1581092921461-eab10380ed77?auto=format&fit=crop&q=80&w=2070" alt="Technology Innovation" className="w-full h-full object-cover" />
+            <img src="DDD\Lucid_Realism_A_hyperrealistic_cinematic_photograph_of_a_dark__0.jpg" alt="Technology Innovation" className="w-full h-full object-cover" />
           </div>
         </motion.div>
       </div>
