@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
   return <div className="min-h-screen w-full flex flex-col justify-center items-center pt-20 pb-10 px-4">
       <div className="max-w-6xl w-full">
         <div className="mb-8 flex justify-center">
-          <img src="DDD\Lucid_Realism_A_hightech_underground_cyberpunk_lab_bathed_in_d_1.png" alt="GENESIZ'25 Banner" className="w-full max-w-4xl rounded-lg shadow-2xl" />
+          <img src="logoo.png" alt="GENESIZ'25 Banner" className="w-full max-w-4xl rounded-lg shadow-2xl" />
         </div>
         <div className="text-center mb-16">
           {/* <motion.h1 className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff]" initial={{

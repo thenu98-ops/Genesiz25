@@ -23,8 +23,8 @@ const BubbleBackground: React.FC = () => {
         // Only small particles (1-4 pixels)
         this.size = Math.random() * 3 + 1;
         // Maintain the faster speed from previous update
-        this.speedX = (Math.random() * 5 - 2.5) * 1.5;
-        this.speedY = (Math.random() * 5 - 2.5) * 1.5;
+        this.speedX = (Math.random() * 5 - 2.5) * 0.5;
+        this.speedY = (Math.random() * 5 - 2.5) * 0.5;
         this.color = colors[Math.floor(Math.random() * colors.length)];
       }
       update() {
