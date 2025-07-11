@@ -15,6 +15,7 @@ import FAQSection from './components/FAQSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import CollabClubs from './components/CollabClubs';
+import Prizes from './components/Prizes';
 
 export function App() {
   return (
@@ -27,12 +28,16 @@ export function App() {
             <section id="home">
               <HeroSection />
             </section>
+                       <section id="prizes" className="py-20 bg-black bg-opacity-70">
+              <Prizes />
+            </section>
             <section id="about" className="py-20">
               <AboutSection />
             </section>
-            <section id="scoreboard" className="py-20 bg-black bg-opacity-70">
+ 
+                        {/* <section id="scoreboard" className="py-20 bg-black bg-opacity-70">
               <ScoreboardSection />
-            </section>
+            </section> */}
             <section id="timeline" className="py-20">
               <TimelineSection />
             </section>
