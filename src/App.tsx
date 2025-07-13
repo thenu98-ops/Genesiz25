@@ -16,6 +16,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import CollabClubs from './components/CollabClubs';
 import Prizes from './components/Prizes';
+import MemoriesSection from './components/MemoriesSection';
 
 export function App() {
   return (
@@ -41,9 +42,12 @@ export function App() {
             <section id="timeline" className="py-20">
               <TimelineSection />
             </section>
-            <section id="partners" className="py-20 bg-black bg-opacity-70">
+                       {/* <section id="mems" className="py-20 bg-black bg-opacity-70">
+              <MemoriesSection />
+            </section> */}
+            {/* <section id="partners" className="py-20 bg-black bg-opacity-70">
               <PartnersSection />
-            </section>
+            </section> */}
             <section id="faq" className="py-20">
               <FAQSection />
             </section>

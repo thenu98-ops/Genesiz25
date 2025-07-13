@@ -3,106 +3,74 @@
 import React from "react";
 import { Slide, Fade } from "react-awesome-reveal";
 
+const contacts = [
+  {
+    name: "Melanka Waladeniya",
+    role: "ERIC President",
+    phone: "+94772607085",
+    email: "melankarasan1234@gmail.com",
+    image: "/1.jpg",
+  },
+  {
+    name: "Deepna Weerakoon",
+    role: "ERIC Secretary",
+    phone: "+94718153813",
+    email: "deepnaweerakoon@gmail.com",
+    image: "/2.jpg",
+  },
+  {
+    name: "Rochana Lokubalasuriya",
+    role: "GENESIZ '25 Co-Chair",
+    phone: "+94775033216",
+    email: "rochanasasmitha123@gmail.com",
+    image: "/3.jpg",
+  },
+  {
+    name: "Lalitha Dulanjana",
+    role: "ERIC Treasurer",
+    phone: "+94719964493",
+    email: "dulanjanalalitha00@gmail.com",
+    image: "/4.jpg",
+  },
+];
+
 const Contact = () => {
   return (
-    <div id="contact" className="pt-6">
-      <div>
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 font-accuminvariable">
-          <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-            <Slide direction="up" triggerOnce>
-              <h2 className="text-4xl text-center font-agencyfb mb-12 text-white sm:text-6xl">
-                Contact Us
-              </h2>
-            </Slide>
+    <div id="contact" className="bg-[#0f0f0f] pt-16 pb-24 px-4 text-white">
+      <div className="max-w-screen-xl mx-auto text-center font-accuminvariable">
+        <Slide direction="up" triggerOnce>
+          <h2 className="text-4xl sm:text-6xl font-agencyfb mb-12 bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff] bg-clip-text text-transparent">
+            Contact Us
+          </h2>
+        </Slide>
+
+        <Fade cascade triggerOnce damping={0.1}>
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {contacts.map((contact, idx) => (
+              <div
+                key={idx}
+                className="bg-black bg-opacity-40 backdrop-blur-md p-6 rounded-2xl shadow-[0_0_20px_rgba(46,242,255,0.2)] hover:shadow-[0_0_30px_rgba(255,42,147,0.4)] transition duration-300"
+              >
+                <img
+                  src={contact.image}
+                  alt={contact.name}
+                  className="mx-auto mb-4 w-28 h-28 rounded-full border-2 border-[#2ef2ff] shadow-md"
+                  loading="lazy"
+                />
+                <h3 className="text-xl font-bold text-white mb-1">{contact.name}</h3>
+                <p className="text-sm text-gray-300 mb-3">{contact.role}</p>
+                <div className="text-custom-cyan-100 text-sm space-y-1">
+                  <p>
+                    <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+                  </p>
+                  <p>
+                    <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-
-          <Fade cascade triggerOnce damping={0.1}>
-            <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-32">
-              <div className="text-center text-gray-500 dark:text-gray-400">
-                <img
-                  src="/arunalu.png"
-                  alt="Contact"
-                  className="mx-auto mb-4 w-36 h-36 "
-                  loading="lazy"
-                />
-                <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Arunalu Rathnathunga
-                </h3>
-                <p>ERIC President</p>
-
-                <h3 className="mt-3 text-custom-cyan-100 text-lg">
-                  <a href="tel:+94773605216"> +94 77 360 5216 </a>
-                </h3>
-                <h3 className=" text-custom-cyan-100 text-lg">
-                  <a href={"mailto:arunaluindudunu@gmail.com"}>
-                    arunaluindudunu@gmail.com
-                  </a>
-                </h3>
-              </div>
-              <div className="text-center text-gray-500 dark:text-gray-400">
-                <img
-                  src="/sanjana.png"
-                  alt="Contact"
-                  className="mx-auto mb-4 w-36 h-36 "
-                  loading="lazy"
-                />
-                <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Sandali Sanjana
-                </h3>
-                <p>ERIC Secretary</p>
-
-                <h3 className="mt-3 text-custom-cyan-100 text-lg">
-                  <a href="tel:+94714677849"> +94 71 467 7849 </a>
-                </h3>
-                <h3 className=" text-custom-cyan-100 text-lg">
-                  <a href={"mailto:sanji.614@gmail.com"}>sanji.614@gmail.com</a>
-                </h3>
-              </div>
-              <div className="text-center text-gray-500 dark:text-gray-400">
-                <img
-                  src="/isuru.png"
-                  alt="Contact"
-                  className="mx-auto mb-4 w-36 h-36 "
-                  loading="lazy"
-                />
-                <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Isuru Darshana
-                </h3>
-                <p>GENESIZ &apos;24 Co-Chair</p>
-
-                <h3 className="mt-3 text-custom-cyan-100 text-lg">
-                  <a href="tel:+94772702015"> +94 77 270 2015 </a>
-                </h3>
-                <h3 className=" text-custom-cyan-100 text-lg">
-                  <a href={"mailto:isurudharshana127@gmail.com"}>
-                    isurudharshana127@gmail.com
-                  </a>
-                </h3>
-              </div>
-              <div className="text-center text-gray-500 dark:text-gray-400">
-                <img
-                  src="/kesara.png"
-                  alt="Contact"
-                  className="mx-auto mb-4 w-36 h-36 "
-                  loading="lazy"
-                />
-                <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Kesara Hansajith
-                </h3>
-                <p>GENESIZ &apos;24 Co-Chair</p>
-
-                <h3 className="mt-3 text-custom-cyan-100 text-lg">
-                  <a href="tel:+94716820004"> +94 71 682 0004 </a>
-                </h3>
-                <h3 className=" text-custom-cyan-100 text-lg">
-                  <a href={"mailto:kesarahansaji@gmail.com"}>
-                    kesarahansaji@gmail.com
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </Fade>
-        </div>
+        </Fade>
       </div>
     </div>
   );

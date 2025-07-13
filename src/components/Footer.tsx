@@ -66,11 +66,7 @@ const Footer: React.FC = () => {
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2025 Robotics and Innovation Club. All rights reserved.
           </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
-            {['Privacy Policy', 'Terms of Service', 'Code of Conduct', 'Contact'].map((item, index) => <a key={index} href="#" className="text-gray-400 text-sm hover:text-[#2ef2ff] transition-colors">
-                {item}
-              </a>)}
-          </div>
+
         </motion.div>
       </div>
     </footer>;
