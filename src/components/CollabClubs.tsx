@@ -22,19 +22,22 @@ const CollabClubs = () => {
               <div className="absolute inset-0  h-32"></div>
             </div>
           </div>
+<h2 className="text-center mt-6 mb-3 text-xl md:text-2xl font-accuminvariable leading-8 text-white">
+  in collaboration with
+</h2>
 
-          <h2 className="text-center mt-6 mb-3 text-xl md:text-2xl font-accuminvariable leading-8 text-white">
-            in collaboration with
-          </h2>
-          <div className="flex items-center justify-center">
-            <img
-              src="/Colabs.png"
-              alt="Collaborating Clubs"
-              className=" w-auto h-18 md:h-24"
-              loading="lazy"
-            />
-            <div className="absolute inset-0  h-32"></div>
-          </div>
+<div className="flex items-center justify-center relative mt-4">
+  <div className="bg-white bg-opacity-50 rounded-xl px-4 py-2">
+    <img
+      src="/Colabs.png"
+      alt="Collaborating Clubs"
+      className="w-auto h-18 md:h-24"
+      loading="lazy"
+    />
+  </div>
+</div>
+
+
         </Fade>
       </div>
     </div>

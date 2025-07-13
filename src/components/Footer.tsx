@@ -34,16 +34,13 @@ const Footer: React.FC = () => {
         }}>
             {[{
             icon: <FacebookIcon className="w-5 h-5" />,
-            link: '#'
-          }, {
-            icon: <TwitterIcon className="w-5 h-5" />,
-            link: '#'
+            link: 'https://www.facebook.com/KDUERIC/'
           }, {
             icon: <InstagramIcon className="w-5 h-5" />,
-            link: '#'
+            link: 'https://www.instagram.com/eric__kdu/'
           }, {
             icon: <YoutubeIcon className="w-5 h-5" />,
-            link: '#'
+            link: 'https://www.youtube.com/@eric-kdu5921'
           }, {
             icon: <LinkedinIcon className="w-5 h-5" />,
             link: '#'

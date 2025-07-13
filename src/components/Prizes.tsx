@@ -10,7 +10,7 @@ const Prizes = () => {
         <div className="grid grid-cols-1 gap-10 xl:gap-16 md:grid-cols-2 lg:grid-cols-3 items-center">
           <Zoom triggerOnce cascade damping={0.1}>
             {/* Runner Up */}
-            <div className="group relative w-full p-8 space-y-8 text-center border border-gray-700 backdrop-blur-lg rounded-2xl transition-all duration-300 hover:border-[#1bb198] hover:shadow-[0_0_20px_#1bb19840]">
+            <div className="group relative w-full p-8 space-y-8 text-center bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_#1bb19840] hover:border-[#1bb198] transition-all duration-300">
               <h2 className="font-agencyfb text-3xl text-[#1bb198]">
                 Runner Up
               </h2>
@@ -28,7 +28,7 @@ const Prizes = () => {
             </div>
 
             {/* Overall Champions */}
-            <div className="group relative w-full p-8 space-y-8 text-center border border-gray-700 backdrop-blur-lg rounded-2xl transition-all duration-300 hover:border-[#fe4e6b] hover:shadow-[0_0_20px_#fe4e6b40]">
+            <div className="group relative w-full p-8 space-y-8 text-center bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_#fe4e6b40] hover:border-[#fe4e6b] transition-all duration-300">
               <h2 className="font-agencyfb text-4xl text-[#fe4e6b]">
                 Overall Champions
               </h2>
@@ -46,7 +46,7 @@ const Prizes = () => {
             </div>
 
             {/* Best Responsive Team */}
-            <div className="group relative w-full p-8 space-y-8 text-center border border-gray-700 backdrop-blur-lg rounded-2xl transition-all duration-300 hover:border-[#7175ff] hover:shadow-[0_0_20px_#7175ff40]">
+            <div className="group relative w-full p-8 space-y-8 text-center bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_#7175ff40] hover:border-[#7175ff] transition-all duration-300">
               <h2 className="font-agencyfb text-3xl text-[#7175ff]">
                 Best Responsive Team
               </h2>

@@ -48,9 +48,9 @@ export function App() {
             {/* <section id="partners" className="py-20 bg-black bg-opacity-70">
               <PartnersSection />
             </section> */}
-            <section id="faq" className="py-20">
+            {/* <section id="faq" className="py-20">
               <FAQSection />
-            </section>
+            </section> */}
             <section id="contact" className="py-20 bg-black bg-opacity-70">
               <ContactSection />
               <CollabClubs />

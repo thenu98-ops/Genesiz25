@@ -49,7 +49,7 @@ const Contact = () => {
             {contacts.map((contact, idx) => (
               <div
                 key={idx}
-                className="bg-black bg-opacity-40 backdrop-blur-md p-6 rounded-2xl shadow-[0_0_20px_rgba(46,242,255,0.2)] hover:shadow-[0_0_30px_rgba(255,42,147,0.4)] transition duration-300"
+                className="bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(255,42,147,0.3)] transition duration-300"
               >
                 <img
                   src={contact.image}
@@ -59,7 +59,7 @@ const Contact = () => {
                 />
                 <h3 className="text-xl font-bold text-white mb-1">{contact.name}</h3>
                 <p className="text-sm text-gray-300 mb-3">{contact.role}</p>
-                <div className="text-custom-cyan-100 text-sm space-y-1">
+                <div className="text-sm text-[#2ef2ff] space-y-1">
                   <p>
                     <a href={`tel:${contact.phone}`}>{contact.phone}</a>
                   </p>
