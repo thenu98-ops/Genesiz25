@@ -16,7 +16,7 @@ const contacts = [
     role: "ERIC Secretary",
     phone: "+94718153813",
     email: "deepnaweerakoon@gmail.com",
-    image: "/2.webp",
+    image: "/2.jpg",
   },
   {
     name: "Rochana Lokubalasuriya",
