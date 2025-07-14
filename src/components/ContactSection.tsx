@@ -9,28 +9,28 @@ const contacts = [
     role: "ERIC President",
     phone: "+94772607085",
     email: "melankarasan1234@gmail.com",
-    image: "/1.jpg",
+    image: "/1.webp",
   },
   {
     name: "Deepna Weerakoon",
     role: "ERIC Secretary",
     phone: "+94718153813",
     email: "deepnaweerakoon@gmail.com",
-    image: "/2.jpg",
+    image: "/2.webp",
   },
   {
     name: "Rochana Lokubalasuriya",
     role: "GENESIZ '25 Co-Chair",
     phone: "+94775033216",
     email: "rochanasasmitha123@gmail.com",
-    image: "/3.jpg",
+    image: "/3.webp",
   },
   {
     name: "Lalitha Dulanjana",
     role: "ERIC Treasurer",
     phone: "+94719964493",
     email: "dulanjanalalitha00@gmail.com",
-    image: "/4.jpg",
+    image: "/4.webp",
   },
 ];
 
