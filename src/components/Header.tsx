@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         scrolled ? 'bg-black bg-opacity-90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-4'
       }`}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container mx-auto px-4  max-w-7xl sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
           <a href="#home" onClick={scrollToSection('home')}>

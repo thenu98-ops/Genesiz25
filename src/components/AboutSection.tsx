@@ -7,24 +7,24 @@ const AboutSection: React.FC = () => {
       title: 'Phase 1: Registration',
       description:
         "Assemble your squad and secure your spot. GENESIZ'25 is calling the next wave of tech disruptors—are you in?",
-      icon: '🚀',
+      // icon: '🚀',
     },
     {
       title: 'Phase 2: Proposal Submission',
       description:
         'Bring your boldest concepts to the table. Submit a proposal that dares to challenge convention and redefine the edge.',
-      icon: '💡',
+      // icon: '💡',
     },
     {
       title: 'Phase 3: Grand Finale',
       description:
         'The top contenders go head-to-head in the ultimate tech showdown. Pitch. Prove. Prevail. The spotlight is yours.',
-      icon: '🏆',
+      // icon: '🏆',
     },
   ];
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 w-full max-w-7xl sm:px-6 lg:px-8">
       <motion.h2
         className="text-4xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff]"
         initial={{ opacity: 0, y: -20 }}
@@ -46,13 +46,13 @@ const AboutSection: React.FC = () => {
             The Next Generation
           </h3>
           <p className="font-sans text-gray-300 mb-4">
-            GENESIZ'25 is not just a competition—it's a launchpad for the
+            GENESIZ &apos;25 is not just a competition, it&apos;s a launchpad for the
             visionaries and creators shaping tomorrow’s tech. Hosted by the
             Robotics and Innovation Club, this event unites bold minds ready to
             solve challenges that matter.
           </p>
           <p className="text-gray-300">
-            Whether you’re coding your first project or engineering future
+            Whether you&apos;re coding your first project or engineering future
             solutions, GENESIZ'25 offers the space to showcase your skills,
             connect with industry leaders, and push the boundaries of what's
             possible.
@@ -97,7 +97,7 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <div className="text-4xl mb-4">{phase.icon}</div>
+            {/* <div className="text-4xl mb-4">{phase.icon}</div> */}
             <h4 className="text-xl font-bold mb-4 text-[#ff2a93]">
               {phase.title}
             </h4>
