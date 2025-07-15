@@ -48,7 +48,7 @@ const AboutSection: React.FC = () => {
           <p className="font-sans text-gray-300 mb-4">
             GENESIZ &apos;25 is not just a competition, it&apos;s a launchpad for the
             visionaries and creators shaping tomorrow’s tech. Hosted by the
-            Electronic,Robotics and Innovation Club in KDU, this event unites bold minds ready to
+            Electronics , Robotics and Innovation Club in KDU, this event unites bold minds ready to
             solve challenges that matter.
           </p>
           <p className="text-gray-300">
