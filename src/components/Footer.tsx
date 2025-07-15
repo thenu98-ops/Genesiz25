@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               },
               {
                 icon: <LinkedinIcon className="w-5 h-5" />,
-                link: "#",
+                link: "https://www.linkedin.com/company/eric-kdu/",
               },
             ].map((social, index) => (
               <a
