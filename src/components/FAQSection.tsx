@@ -21,23 +21,23 @@ const FAQItem: React.FC<{
 };
 const FAQSection: React.FC = () => {
   const faqs = [{
+    question: "What is GENESIZ '25?",
+    answer: "GENESIZ '25 is dedicated to young innovators who can deliver fresh and groundbreaking solutions to Sri Lanka's pressing challenges."
+  }, {
     question: "Who can participate in GENESIZ'25?",
-    answer: "GENESIZ'25 is open to students, professionals, and tech enthusiasts from all backgrounds. Teams can consist of 2-4 members, and at least one member should have technical knowledge relevant to the project."
+    answer: "GENESIZ '24 welcomes the participation of undergraduate students from universities or higher educational institutions."
   }, {
-    question: 'What are the registration fees?',
-    answer: "Registration for GENESIZ'25 is completely free! We believe in providing equal opportunities for all innovators to showcase their talents without any financial barriers."
+    question: 'How many people can be there in a team?',
+    answer: 'A team can consist of a minimum of 3 & a maximum of 4 participants.'
   }, {
-    question: 'What kind of projects are eligible?',
-    answer: 'We welcome projects in various domains including AI/ML, IoT, Robotics, Blockchain, AR/VR, and other cutting-edge technologies. Projects should address real-world problems and demonstrate innovation.'
+    question: 'Can a team consist of participants from different universities?',
+    answer: "Participants from the same university or higher educational institutions are preferred to be in the same team, as GENESIZ '25 is an inter university competition."
   }, {
-    question: 'Is this a team or individual competition?',
-    answer: "GENESIZ'25 is primarily a team competition. Teams can consist of 2-4 members. However, we do accept individual participants for exceptional project proposals."
+    question: 'Can a team consist of participants from different degree programs?',
+    answer: 'It is not mandatory for a team to only include participants from a single degree program.'
   }, {
-    question: 'What are the judging criteria?',
-    answer: 'Projects will be evaluated based on innovation, technical complexity, practical application, presentation quality, and potential impact. Our panel of industry experts will provide comprehensive feedback.'
-  }, {
-    question: 'What will the winners receive?',
-    answer: 'Winners will receive cash prizes, mentorship opportunities from industry leaders, internship offers from our partner companies, and extensive media coverage for their innovative solutions.'
+    question: 'What happens after completing the registration process?',
+    answer: 'Team members will be eligible to submit their proposals briefly outlining the proposed innovative solutions, within the specified timeframe, with all guidelines are met.'
   }];
   return <div className="container mx-auto px-4">
       <motion.h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff]" initial={{

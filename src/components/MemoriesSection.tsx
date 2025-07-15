@@ -1,75 +1,38 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 
 const images = [
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-    '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  '/1.webp',
-  // ➕ Add more as needed
+  '/m1.jpg',
+  '/m2.jpg',
+  '/m3.jpg', // Replace with your actual paths
 ];
 
-const MemoriesSection: React.FC = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  // Limit preview on homepage (e.g., first 4)
-  const previewImages = images.slice(0, 4);
-
+const Memories: React.FC = () => {
   return (
-    <div className="px-6 py-16 bg-[#0f0f0f] text-white min-h-screen flex flex-col items-center">
-      <h2 className="text-3xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff] bg-clip-text text-transparent">
-        Precious Memories
-      </h2>
+    <section id="memories" className="py-20 bg-black">
+      <div className="max-w-7xl mx-auto px-4 text-center">
+        {/* Gradient Heading */}
+        <h2 className="text-4xl sm:text-6xl font-agencyfb mb-12 text-transparent bg-clip-text bg-gradient-to-r from-[#e278ff] via-[#bca0ff] to-[#67d4ff]">
+          Memories
+        </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl w-full">
-        {previewImages.map((img, index) => (
-          <motion.div
-            key={index}
-            className="rounded-xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition duration-300"
-            onClick={() => setSelectedImage(img)}
-            whileHover={{ scale: 1.03 }}
-          >
-            <img src={img} alt={`Memory ${index + 1}`} className="w-full h-48 object-cover" />
-          </motion.div>
-        ))}
+        {/* Image Cards with Glassmorphism */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {images.map((src, index) => (
+            <div
+              key={index}
+              className="relative rounded-2xl overflow-hidden p-1 backdrop-blur-lg bg-white/10 border border-white/20 shadow-lg hover:scale-105 transform transition-all duration-500"
+            >
+              <img
+                src={src}
+                alt={`Memory ${index + 1}`}
+                className="rounded-2xl w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
-      {/* Optional: Link to full gallery */}
-      <a href="/gallery" className="mt-8 text-[#2ef2ff] underline text-lg hover:text-[#ff2a93] transition">
-        View All Memories
-      </a>
-
-      {/* Fullscreen Modal Preview */}
-      <AnimatePresence>
-        {selectedImage && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-          >
-            <motion.img
-              src={selectedImage}
-              alt="Selected"
-              className="max-w-full max-h-full rounded-lg"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+    </section>
   );
 };
 
-export default MemoriesSection;
+export default Memories;

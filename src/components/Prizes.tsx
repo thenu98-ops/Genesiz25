@@ -6,17 +6,18 @@ import { Zoom } from "react-awesome-reveal";
 
 const Prizes = () => {
   return (
-    <div id="prizes" className="bg-[#0f0f0f] w-full py-16  px-6">
+    <div id="prizes" className="bg-black w-full py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.h2
-        className="text-4xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff]"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        Prizes
-      </motion.h2>
+          className="text-4xl md:text-5xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#e278ff] via-[#bca0ff] to-[#67d4ff]"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Prizes
+        </motion.h2>
+
         <div className="grid grid-cols-1 gap-10 xl:gap-16 md:grid-cols-2 lg:grid-cols-3 items-center">
           <Zoom triggerOnce cascade damping={0.1}>
             {/* Runner Up */}

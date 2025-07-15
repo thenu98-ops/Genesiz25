@@ -36,10 +36,10 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-[#0f0f0f] pt-16 pb-24 px-4 text-white">
+    <div id="contact" className="bg-black pt-16 pb-24 px-4 text-white">
       <div className="max-w-screen-xl mx-auto text-center font-accuminvariable">
         <Slide direction="up" triggerOnce>
-          <h2 className="text-4xl sm:text-6xl font-agencyfb mb-12 bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-6xl font-agencyfb mb-12 bg-gradient-to-r from-[#e278ff] via-[#bca0ff] to-[#67d4ff] bg-clip-text text-transparent">
             Contact Us
           </h2>
         </Slide>
@@ -49,7 +49,7 @@ const Contact = () => {
             {contacts.map((contact, idx) => (
               <div
                 key={idx}
-                className="bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(255,42,147,0.3)] transition duration-300"
+                className="bg-white/5 backdrop-blur-xl p-6 rounded-3xl border border-white/10 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_#67d4ff40] transition duration-300"
               >
                 <img
                   src={contact.image}
@@ -57,7 +57,9 @@ const Contact = () => {
                   className="mx-auto mb-4 w-28 h-28 rounded-full border-2 border-[#2ef2ff] shadow-md"
                   loading="lazy"
                 />
-                <h3 className="text-xl font-bold text-white mb-1">{contact.name}</h3>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  {contact.name}
+                </h3>
                 <p className="text-sm text-gray-300 mb-3">{contact.role}</p>
                 <div className="text-sm text-[#2ef2ff] space-y-1">
                   <p>
