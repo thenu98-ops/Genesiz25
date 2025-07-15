@@ -32,13 +32,23 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4  max-w-7xl sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        {/* <div className="flex-shrink-0">
           <a href="#home" onClick={scrollToSection('home')}>
             <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff] hover:from-[#2ef2ff] hover:to-[#ff2a93] transition-all duration-500">
               GENESIZ'25
             </div>
           </a>
-        </div>
+        </div> */}
+
+        <div className="flex-shrink-0">
+  <a href="#home" onClick={scrollToSection('home')}>
+    <img
+      src="logoo.png"
+      alt="GENESIZ'25 Logo"
+      className="h-10 sm:h-12 md:h-14 transition-transform duration-500 hover:scale-105"
+    />
+  </a>
+</div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-grow justify-center">
