@@ -25,7 +25,7 @@ const FAQSection: React.FC = () => {
     answer: "GENESIZ '25 is dedicated to young innovators who can deliver fresh and groundbreaking solutions to Sri Lanka's pressing challenges."
   }, {
     question: "Who can participate in GENESIZ'25?",
-    answer: "GENESIZ '24 welcomes the participation of undergraduate students from universities or higher educational institutions."
+    answer: "GENESIZ '25 welcomes the participation of undergraduate students from universities or higher educational institutions."
   }, {
     question: 'How many people can be there in a team?',
     answer: 'A team can consist of a minimum of 3 & a maximum of 4 participants.'
