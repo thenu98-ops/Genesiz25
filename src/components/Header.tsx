@@ -53,7 +53,7 @@ const Header: React.FC = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-grow justify-center">
           <ul className="flex space-x-10">
-            {['Home', 'About', 'Scoreboard', 'Timeline', 'Partners', 'FAQ', 'Contact Us'].map((item) => (
+            {['Home', 'About', 'Timeline',  'FAQ'].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(' ', '')}`}
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden w-full transition-all duration-300 ${menuOpen ? 'block' : 'hidden'}`}>
         <ul className="flex flex-col items-center space-y-4 py-4 bg-black bg-opacity-90">
-          {['Home', 'About', 'Scoreboard', 'Timeline', 'Partners', 'FAQ', 'Contact Us'].map((item) => (
+          {['Home', 'About',  'Timeline',  'FAQ', ].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase().replace(' ', '')}`}
