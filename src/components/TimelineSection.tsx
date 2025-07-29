@@ -92,7 +92,7 @@ import { motion } from 'framer-motion';
 const TimelineSection: React.FC = () => {
   const events = [
     { date: '13th JULY', event: 'Registration Opening' },
-    { date: '26th JULY', event: 'Registration Closing' },
+    { date: '2nd AUG', event: 'Registration Closing' },
     { date: '30th JULY', event: 'Awareness Session & Proposal Submission Opening (Online)' },
     { date: '11th AUG', event: 'Proposal Submission Closing' },
     { date: '18th AUG', event: 'Announcing Finalists' },
