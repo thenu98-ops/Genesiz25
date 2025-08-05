@@ -93,8 +93,8 @@ const TimelineSection: React.FC = () => {
   const events = [
     { date: '13th JULY', event: 'Registration Opening' },
     { date: '2nd AUG', event: 'Registration Closing' },
-    { date: '30th JULY', event: 'Awareness Session & Proposal Submission Opening (Online)' },
-    { date: '11th AUG', event: 'Proposal Submission Closing' },
+    { date: '7th AUG', event: 'Awareness Session & Proposal Submission Opening (Online)' },
+    { date: '12th AUG', event: 'Proposal Submission Closing' },
     { date: '18th AUG', event: 'Announcing Finalists' },
     { date: '23rd AUG', event: 'Event Date – Grand Finale & Award Ceremony (Physical)' }
   ];
