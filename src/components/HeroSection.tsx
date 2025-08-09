@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <div 
-      className="w-full flex flex-col justify-center items-center px-4 overflow-hidden bg-cover bg-center bg-[url('/sample_bg.jpg')] relative"
+      className="w-full flex flex-col justify-center items-center px-4 overflow-hidden bg-cover bg-center bg-[url('/sample_bg.webp')] relative"
     >
       {/* Background overlay for opacity */}
       <div className="absolute inset-0 bg-black opacity-55"></div>
