@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   const [showGlitch, setShowGlitch] = useState(false);
 
   useEffect(() => {
-    const targetDate = new Date('2025-08-07T00:00:00');
+    const targetDate = new Date('2025-08-23T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = targetDate.getTime() - now.getTime();
@@ -146,13 +146,13 @@ const HeroSection: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <motion.button
+              {/* <motion.button
                 className="px-6 py-3 bg-gradient-to-r from-[#ff2a93] to-[#7a2aff] text-white font-bold rounded-full text-sm md:text-base hover:shadow-[0_0_15px_rgba(255,42,147,0.8)] transition-shadow"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Register Now
-              </motion.button>
+              </motion.button> */}
             </a>
 
             <a
@@ -172,7 +172,7 @@ const HeroSection: React.FC = () => {
 
           <div className="flex justify-center">
             <div className="bg-black bg-opacity-50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl w-full max-w-2xl mx-4 sm:mx-0">
-              <h3 className="text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 text-white">Submission Opening soon</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 text-white">Grand Finale & Award Ceremony – Opening Soon</h3>
               <div className="flex justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-10">
                 {[
                   { label: 'Days', value: timeLeft.days },
