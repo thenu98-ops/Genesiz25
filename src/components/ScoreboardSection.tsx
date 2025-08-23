@@ -1,108 +1,57 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-const ScoreboardSection: React.FC = () => {
-  // Sample data for demonstration
-  const teams = [{
-    rank: 1,
-    name: 'Team Quantum',
-    score: 95,
-    project: 'AI-Driven Healthcare Solution'
-  }, {
-    rank: 2,
-    name: 'Binary Beasts',
-    score: 92,
-    project: 'Smart City Infrastructure'
-  }, {
-    rank: 3,
-    name: 'Tech Titans',
-    score: 88,
-    project: 'Renewable Energy System'
-  }, {
-    rank: 4,
-    name: 'Code Crusaders',
-    score: 85,
-    project: 'Blockchain Security Protocol'
-  }, {
-    rank: 5,
-    name: 'Innovation X',
-    score: 82,
-    project: 'AR Educational Platform'
-  }];
-  return <div className="container mx-auto px-4">
-      <motion.h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff]" initial={{
-      opacity: 0,
-      y: -20
-    }} whileInView={{
-      opacity: 1,
-      y: 0
-    }} viewport={{
-      once: true
-    }} transition={{
-      duration: 0.6
-    }}>
-        Competition Scoreboard
-      </motion.h2>
-      <motion.div className="max-w-4xl mx-auto bg-black bg-opacity-70 backdrop-blur-sm rounded-xl overflow-hidden" initial={{
-      opacity: 0
-    }} whileInView={{
-      opacity: 1
-    }} viewport={{
-      once: true
-    }} transition={{
-      duration: 0.6
-    }}>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left">
-            <thead>
-              <tr className="border-b border-[#ff2a93]/30">
-                <th className="px-6 py-4 text-[#2ef2ff]">Rank</th>
-                <th className="px-6 py-4 text-[#2ef2ff]">Team</th>
-                <th className="px-6 py-4 text-[#2ef2ff]">Project</th>
-                <th className="px-6 py-4 text-[#2ef2ff]">Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              {teams.map((team, index) => <motion.tr key={index} className={`border-b border-gray-800 ${index === 0 ? 'bg-gradient-to-r from-[#ff2a93]/10 to-[#2ef2ff]/10' : ''}`} initial={{
-              opacity: 0,
-              x: -20
-            }} whileInView={{
-              opacity: 1,
-              x: 0
-            }} viewport={{
-              once: true
-            }} transition={{
-              duration: 0.4,
-              delay: index * 0.1
-            }}>
-                  <td className="px-6 py-4">
-                    <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full ${index === 0 ? 'bg-gradient-to-r from-[#ff2a93] to-[#2ef2ff] text-black font-bold' : index === 1 ? 'bg-gray-700 text-white' : index === 2 ? 'bg-[#614e1a] text-white' : 'text-gray-400'}`}>
-                      {team.rank}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 font-medium text-white">
-                    {team.name}
-                  </td>
-                  <td className="px-6 py-4 text-gray-300">{team.project}</td>
-                  <td className="px-6 py-4 font-bold text-[#ff2a93]">
-                    {team.score}
-                  </td>
-                </motion.tr>)}
-            </tbody>
-          </table>
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const Scoreboard: React.FC = () => {
+  const [teams, setTeams] = useState([
+    { name: "Tech Pera", uni: "University of Peradeniya", score: 90 },
+    { name: "Neo Node", uni: "University of Moratuwa", score: 50 },
+    { name: "Pulztrones", uni: "University of Moratuwa", score: 100 },
+    { name: "Bioplastic Revolution", uni: "University of Moratuwa", score:80 },
+    { name: "Invex", uni: "University of Peradeniya", score:60},
+    { name: "Brainly Squad", uni: "University of Peradeniya", score: 60 },
+    { name: "InnovateX", uni: "Kotelawala Defence University", score: 70 },
+    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 30 },
+    { name: "SPELLBINDERS", uni: "Kotelawala Defence University", score:40 },
+    { name: "Hydrotech", uni: "University of Kelaniya", score: 60 },
+  ]);
+
+  // Auto-sort teams by score whenever scores update
+  useEffect(() => {
+    const sorted = [...teams].sort((a, b) => b.score - a.score);
+    setTeams(sorted);
+  }, []);
+
+  return (
+    <div className="flex justify-center mt-10 px-4">
+      <div className="bg-black bg-opacity-60 backdrop-blur-lg p-6 sm:p-8 rounded-2xl w-full max-w-3xl shadow-2xl">
+        <h3 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#ff2a93] via-[#2ef2ff] to-[#7a2aff]">
+          🏆 Live Scoreboard
+        </h3>
+
+        <div className="space-y-3">
+          {teams.map((team, index) => (
+            <motion.div
+              key={team.name}
+              className="flex justify-between items-center bg-gradient-to-r from-[#1e1e2f] to-[#2a2a3d] px-4 py-3 rounded-xl shadow-md hover:scale-[1.02] transition-transform"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.4 }}
+            >
+              <div className="flex flex-col">
+                <span className="text-lg sm:text-xl font-bold text-white">
+                  {index + 1}. {team.name}
+                </span>
+                <span className="text-sm text-gray-400">{team.uni}</span>
+              </div>
+              {/* <div className="text-2xl font-extrabold text-[#2ef2ff]">
+                {team.score}
+              </div> */}
+            </motion.div>
+          ))}
         </div>
-      </motion.div>
-      <motion.p className="text-center mt-6 text-gray-400 italic" initial={{
-      opacity: 0
-    }} whileInView={{
-      opacity: 1
-    }} viewport={{
-      once: true
-    }} transition={{
-      duration: 0.6,
-      delay: 0.5
-    }}>
-        Scores will be updated after each evaluation phase
-      </motion.p>
-    </div>;
+      </div>
+    </div>
+  );
 };
-export default ScoreboardSection;
+
+export default Scoreboard;
