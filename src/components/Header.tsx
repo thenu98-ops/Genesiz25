@@ -53,7 +53,7 @@ const Header: React.FC = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-grow justify-center">
           <ul className="flex space-x-10">
-            {['Home', 'About', 'Timeline',  'FAQ'].map((item) => (
+            {['Home', 'About', 'Timeline', 'Scoreboard', 'Partners', 'FAQ'].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(' ', '')}`}

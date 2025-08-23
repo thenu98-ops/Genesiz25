@@ -32,16 +32,16 @@ export function App() {
             </section>
             
 
-            {/* <section id="scoreboard" className="py-20 bg-black bg-opacity-70">
+            <section id="scoreboard" className="py-20 bg-black bg-opacity-70">
               <ScoreboardSection />
-            </section> */}
+            </section>
             <section id="timeline" className="py-20">
               <TimelineSection />
             </section>
 
-            {/* <section id="partners" className="py-20 bg-black bg-opacity-70">
+            <section id="partners" className="py-20 bg-black bg-opacity-70">
               <PartnersSection />
-            </section> */}
+            </section>
             <section id="prizes" className=" bg-opacity-70">
               <Prizes />
             </section>
