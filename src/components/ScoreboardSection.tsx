@@ -10,7 +10,7 @@ const Scoreboard: React.FC = () => {
     { name: "Invex", uni: "University of Peradeniya", score:60},
     { name: "Brainly Squad", uni: "University of Peradeniya", score: 60 },
     { name: "InnovateX", uni: "Kotelawala Defence University", score: 70 },
-    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 30 },
+    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 60 },
     { name: "SPELLBINDERS", uni: "Kotelawala Defence University", score:40 },
     { name: "Hydrotech", uni: "University of Kelaniya", score: 60 },
   ]);
