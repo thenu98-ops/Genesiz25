@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 const Scoreboard: React.FC = () => {
   const [teams, setTeams] = useState([
     { name: "Tech Pera", uni: "University of Peradeniya", score: 90 },
-    { name: "Neo Node", uni: "University of Moratuwa", score: 50 },
-    { name: "Pulztrones", uni: "University of Moratuwa", score: 100 },
-    { name: "Bioplastic Revolution", uni: "University of Moratuwa", score:80 },
-    { name: "Invex", uni: "University of Peradeniya", score:60},
-    { name: "Brainly Squad", uni: "University of Peradeniya", score: 60 },
-    { name: "InnovateX", uni: "Kotelawala Defence University", score: 70 },
-    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 60 },
+    { name: "Neo Node", uni: "University of Moratuwa", score: 30 },
+    { name: "Pulztrones", uni: "University of Moratuwa", score: 60 },
+    { name: "Bioplastic Revolution", uni: "University of Moratuwa", score:100 },
+    { name: "Invex", uni: "University of Peradeniya", score:50},
+    { name: "Brainly Squad", uni: "University of Peradeniya", score: 20 },
+    { name: "InnovateX", uni: "Kotelawala Defence University", score: 80 },
+    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 10 },
     { name: "SPELLBINDERS", uni: "Kotelawala Defence University", score:40 },
-    { name: "Hydrotech", uni: "University of Kelaniya", score: 60 },
+    { name: "Hydrotech", uni: "University of Kelaniya", score: 70 },
   ]);
 
   // Auto-sort teams by score whenever scores update
