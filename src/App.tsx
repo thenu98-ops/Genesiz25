@@ -27,6 +27,10 @@ export function App() {
             <section id="home">
               <HeroSection />
             </section>
+
+                        <section id="prizes" className=" bg-opacity-70">
+              <Prizes />
+            </section>
             <section id="about" className="py-20">
               <AboutSection />
             </section>
@@ -42,9 +46,7 @@ export function App() {
             <section id="partners" className="py-20 bg-black bg-opacity-70">
               <PartnersSection />
             </section>
-            <section id="prizes" className=" bg-opacity-70">
-              <Prizes />
-            </section>
+
                         <section id="mems" className=" bg-opacity-70">
               <MemoriesSection />
             </section>

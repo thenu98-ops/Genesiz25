@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 const Scoreboard: React.FC = () => {
   const [teams, setTeams] = useState([
-    { name: "Tech Pera", uni: "University of Peradeniya", score: 90 },
-    { name: "Neo Node", uni: "University of Moratuwa", score: 30 },
-    { name: "Pulztrones", uni: "University of Moratuwa", score: 60 },
+    { name: "Tech Pera", uni: "University of Peradeniya", score: 60 },
+    { name: "Neo Node", uni: "University of Moratuwa", score: 20 },
+    { name: "Pulztrones", uni: "University of Moratuwa", score: 80 },
     { name: "Bioplastic Revolution", uni: "University of Moratuwa", score:100 },
-    { name: "Invex", uni: "University of Peradeniya", score:50},
-    { name: "Brainly Squad", uni: "University of Peradeniya", score: 20 },
-    { name: "InnovateX", uni: "Kotelawala Defence University", score: 80 },
-    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 10 },
-    { name: "SPELLBINDERS", uni: "Kotelawala Defence University", score:40 },
-    { name: "Hydrotech", uni: "University of Kelaniya", score: 70 },
+    { name: "Invex", uni: "University of Peradeniya", score:70},
+    { name: "Brainly Squad", uni: "University of Peradeniya", score: 40 },
+    { name: "InnovateX", uni: "Kotelawala Defence University", score: 30 },
+    { name: "Mindspark", uni: "Sri Lanka Institute of Information Technology", score: 50 },
+    { name: "SPELLBINDERS", uni: "Kotelawala Defence University", score:10 },
+    { name: "Hydrotech", uni: "University of Kelaniya", score: 90 },
   ]);
 
   // Auto-sort teams by score whenever scores update
@@ -25,7 +25,7 @@ const Scoreboard: React.FC = () => {
     <div className="flex justify-center mt-10 px-4">
       <div className="bg-black bg-opacity-60 backdrop-blur-lg p-6 sm:p-8 rounded-2xl w-full max-w-3xl shadow-2xl">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#ff2a93] via-[#2ef2ff] to-[#7a2aff]">
-          🏆 Live Scoreboard
+          🏆 Scoreboard
         </h3>
 
         <div className="space-y-3">
