@@ -37,7 +37,8 @@ const Prizes = () => {
                 40,000 LKR
               </h2>
               <p className="text-lg text-white mt-2">
-                <span className="font-bold">Hydro</span> <br />
+                <span className="font-bold">Hydrotech
+</span> <br />
                 <span className="font-normal text-gray-300">(University of Kelaniya)</span>
               </p>
             </div>
@@ -59,7 +60,7 @@ const Prizes = () => {
                 70,000 LKR
               </h2>
               <p className="text-lg text-white mt-2">
-                <span className="font-bold">Bioplastic</span> <br />
+                <span className="font-bold">Bioplastic Revolution</span> <br />
                 <span className="font-normal text-gray-300">(University of Moratuwa)</span>
               </p>
             </div>
@@ -81,7 +82,7 @@ const Prizes = () => {
                 20,000 LKR
               </h2>
               <p className="text-lg text-white mt-2">
-                <span className="font-bold">Pulztronics</span> <br />
+                <span className="font-bold">Pulztrones</span> <br />
                 <span className="font-normal text-gray-300">(University of Moratuwa)</span>
               </p>
             </div>
